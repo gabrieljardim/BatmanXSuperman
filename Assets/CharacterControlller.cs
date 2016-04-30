@@ -9,6 +9,7 @@ public class CharacterControlller : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+
 		GetComponent<Rigidbody> ().freezeRotation = true;
 	
 	}
