@@ -19,7 +19,7 @@ public class Shot : MonoBehaviour {
 	void Update () {
 		Vector3 distance = transform.position - batmanTransform.position;
 
-		if (distance.magnitude > 20) {
+		if (distance.magnitude > 40) {
 			Destroy (gameObject);
 		}
 	}
