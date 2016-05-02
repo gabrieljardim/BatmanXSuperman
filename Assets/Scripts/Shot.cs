@@ -4,7 +4,7 @@ using System.Collections;
 public class Shot : MonoBehaviour {
 
 
-	public CharacterController charController;
+	public CharController charController;
 	private Transform batmanTransform;
 
 	void Start () {
@@ -27,7 +27,7 @@ public class Shot : MonoBehaviour {
 	void OnCollisionEnter(Collision col)
 	{
 		if (col.gameObject.name == "Superman" || col.gameObject.name == "Batman") {
-			charController = col.gameObject.GetComponent<CharacterController> ();
+			charController = col.gameObject.GetComponent<CharController> ();
 			charController.decreaseLife ();
 		}
 		Destroy (gameObject);
