@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CharacterControlller : Player {
+public class CharacterController : Player {
 
 	public float speed = 2.0F;
 	public float intensity = 20.0F;
