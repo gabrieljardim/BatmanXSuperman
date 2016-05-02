@@ -21,4 +21,10 @@ public class Shot : MonoBehaviour {
 			Destroy (gameObject);
 		}
 	}
+
+	void OnCollisionEnter(Collision col)
+	{
+		Destroy (gameObject);
+	}
+		
 }

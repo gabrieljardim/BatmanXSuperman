@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CharacterControlller : MonoBehaviour {
+public class CharacterControlller : Player {
 
 	public float speed = 2.0F;
 	public float intensity = 20.0F;
@@ -9,9 +9,8 @@ public class CharacterControlller : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
-
 		GetComponent<Rigidbody> ().freezeRotation = true;
+		life = startLife;
 	
 	}
 
@@ -35,6 +34,6 @@ public class CharacterControlller : MonoBehaviour {
 		horizontalMove *= speed * Time.deltaTime;
 		verticalMove *= speed * Time.deltaTime;
 		transform.Translate (horizontalMove, 0, verticalMove);
-	
 	}
+
 }
